@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -43,7 +44,12 @@ public class RegistrationPage extends BasePage {
         inputLastName.sendKeys(lastName);
         inputEmail.sendKeys(email);
         inputPassword.sendKeys(password);
-        checkboxTermsOfUse.click();
+
+        inputPassword.sendKeys(Keys.TAB);
+        new Actions(driver)
+                .keyDown(Keys.SPACE)
+                .keyUp(Keys.SPACE)
+                .perform();
         return this;
     }
 
