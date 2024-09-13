@@ -17,9 +17,9 @@ public class HomePage extends BasePage {
                 new AjaxElementLocatorFactory(driver, 10), this);
     }
 
-    @FindBy(xpath="//app-navigator/div/a[text()=' Log in ']")
+    @FindBy(xpath="//a[text()=' Log in ']")
     WebElement btnLoginHeader;
-    @FindBy(xpath="//app-navigator/div/a[text()=' Sign up ']")
+    @FindBy(xpath="//a[text()=' Sign up ']")
     WebElement btnSignupHeader;
 
     public LoginPage clickBtnLoginHeader() {

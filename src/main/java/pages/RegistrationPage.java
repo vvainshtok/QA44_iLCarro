@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,23 +15,27 @@ public class RegistrationPage extends BasePage {
                 new AjaxElementLocatorFactory(driver, 10), this);
     }
 
-    @FindBy(xpath = "//input[@id='name']")
+    @FindBy(id = "name")
     WebElement inputName;
-    @FindBy(xpath = "//input[@id='lastName']")
+    @FindBy(id = "lastName")
     WebElement inputLastName;
-    @FindBy(xpath = "//input[@id='email']")
+    @FindBy(id = "email")
     WebElement inputEmail;
-    @FindBy(xpath = "//input[@id='password']")
+    @FindBy(id = "password")
     WebElement inputPassword;
-    @FindBy(xpath = "//input[@type='checkbox']")
+    @FindBy(xpath = "//label[@for='terms-of-use']")
             // //label[@for='terms-of-use']
             // //*[text()=' I agree to the ']
             // //*[text()=' and ']
             // //div[@class='checkbox-container']
-    WebElement checkboxTermsOfUse;
+            // //input[@type='checkbox']
+    WebElement checkbox;
 
-    @FindBy(xpath = "//form/button")
+    @FindBy(xpath="//button[@type='submit']")
     WebElement btnYalla;
+
+    @FindBy(xpath="//h2[@class='message']")
+    WebElement textPopUpRegSuccess;
 
     @FindBy(xpath = "//*[text()='Registered']")
     WebElement textRegistered;
@@ -45,17 +48,29 @@ public class RegistrationPage extends BasePage {
         inputEmail.sendKeys(email);
         inputPassword.sendKeys(password);
 
-        inputPassword.sendKeys(Keys.TAB);
-        new Actions(driver)
-                .keyDown(Keys.SPACE)
-                .keyUp(Keys.SPACE)
-                .perform();
+    //    inputPassword.sendKeys(Keys.TAB);
+    //    new Actions(driver)
+    //            .keyDown(Keys.SPACE)
+    //            .keyUp(Keys.SPACE)
+    //            .perform();
         return this;
     }
 
-    public RegistrationPage clickBtnRegistrationPositive() {
+    public RegistrationPage clickCheckBox() {
+        int width = checkbox.getRect().getWidth();
+        int height = checkbox.getRect().getHeight();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(checkbox,-width/4,-height/4).click().perform();
+        return this;
+    }
+
+    public RegistrationPage clickBtnYalla() {
         btnYalla.click();
         return this;
+    }
+
+    public boolean isElementPresentRegSuccess() {
+        return isTextInElementPresent(textPopUpRegSuccess,"You are logged in success");
     }
 
     public AccountPage clickBtnRegistrationOk() {

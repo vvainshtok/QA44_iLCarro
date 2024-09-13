@@ -12,7 +12,8 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(new HomePage(getDriver())
                 .clickBtnLoginHeader()
                 .typeLoginForm("vv@gmail.com", "QWErty123!")
-                .clickBtnLoginPositive()
-                .isElementLogoutPresent());
+                .clickBtnYallaPositive()
+                .isTextInElementPresent_LoginSuccess());
+        //      .isElementLogoutPresent());
     }
 }

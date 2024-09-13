@@ -14,13 +14,15 @@ public class LoginPage extends BasePage{
                 new AjaxElementLocatorFactory(driver, 10), this);
     }
 
-    @FindBy(xpath="//input[@id='email']")
+    @FindBy(id="email")
     WebElement inputEmail;
-    @FindBy(xpath="//input[@id='password']")
+    @FindBy(id="password")
     WebElement inputPassword;
-
-    @FindBy(xpath="//form/button")
+    @FindBy(xpath="//button[@type='submit']")
     WebElement btnYalla;
+
+    @FindBy(xpath="//h2[@class='message']")
+    WebElement textPopUpLoginSuccess;
 
     public LoginPage typeLoginForm(String email, String password) {
         inputEmail.sendKeys(email);
@@ -28,9 +30,14 @@ public class LoginPage extends BasePage{
         return this;
     }
 
-    public AccountPage clickBtnLoginPositive() {
+    public LoginPage clickBtnYallaPositive() {
+        pause(3);
         btnYalla.click();
-        return new AccountPage(driver);
+        return this;
+    }
+
+    public boolean isTextInElementPresent_LoginSuccess() {
+        return isTextInElementPresent(textPopUpLoginSuccess, "Logged in success");
     }
 
 }
