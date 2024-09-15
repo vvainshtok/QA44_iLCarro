@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,13 +25,20 @@ public class LoginPage extends BasePage{
     @FindBy(xpath="//h2[@class='message']")
     WebElement textPopUpLoginSuccess;
 
+    @FindBy(xpath="//*[@id='email']/../div/div")
+    WebElement errorMessageUnderEmailInput;
+    @FindBy(xpath="//*[@id='password']/../div")
+    WebElement errorMessageUnderPasswordInput;
+
+
     public LoginPage typeLoginForm(String email, String password) {
         inputEmail.sendKeys(email);
         inputPassword.sendKeys(password);
+        inputEmail.click();
         return this;
     }
 
-    public LoginPage clickBtnYallaPositive() {
+    public LoginPage clickBtnYalla() {
         pause(3);
         btnYalla.click();
         return this;
@@ -40,4 +48,19 @@ public class LoginPage extends BasePage{
         return isTextInElementPresent(textPopUpLoginSuccess, "Logged in success");
     }
 
+    public boolean isTextInElementPresent_errorMessageLogin() {
+        return isTextInElementPresent(textPopUpLoginSuccess, "Login or Password incorrect");
+    }
+
+    public boolean isTextInElementPresent_errorMessageNotEmail() {
+        return isTextInElementPresent(errorMessageUnderEmailInput, "not look like email");
+    }
+
+    public boolean isTextInElementPresent_errorMessageEmailRequired() {
+        return isTextInElementPresent(errorMessageUnderEmailInput, "Email is required");
+    }
+
+    public boolean isTextInElementPresent_errorMessagePasswordRequired() {
+        return isTextInElementPresent(errorMessageUnderPasswordInput, "Password is required");
+    }
 }

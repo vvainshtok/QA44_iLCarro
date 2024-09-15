@@ -12,8 +12,48 @@ public class LoginTests extends ApplicationManager {
         Assert.assertTrue(new HomePage(getDriver())
                 .clickBtnLoginHeader()
                 .typeLoginForm("vv@gmail.com", "QWErty123!")
-                .clickBtnYallaPositive()
+                .clickBtnYalla()
                 .isTextInElementPresent_LoginSuccess());
-        //      .isElementLogoutPresent());
+    }
+
+    @Test
+    public void loginNegativeTest_wrongPassword() {
+        Assert.assertTrue(new HomePage(getDriver())
+                .clickBtnLoginHeader()
+                .typeLoginForm("vv@gmail.com", "QWErty123!_wrong")
+                .clickBtnYalla()
+                .isTextInElementPresent_errorMessageLogin());
+    }
+    @Test
+    public void loginNegativeTest_wrongEmail() {
+        Assert.assertTrue(new HomePage(getDriver())
+                .clickBtnLoginHeader()
+                .typeLoginForm("vv_wrong@gmail.com", "QWErty123!")
+                .clickBtnYalla()
+                .isTextInElementPresent_errorMessageLogin());
+    }
+
+    @Test
+    public void loginNegativeTest_invalidEmail() {
+        Assert.assertTrue(new HomePage(getDriver())
+                .clickBtnLoginHeader()
+                .typeLoginForm("invalidemail", "QWErty123!")
+                .isTextInElementPresent_errorMessageNotEmail());
+    }
+
+    @Test
+    public void loginNegativeTest_emptyEmail() {
+        Assert.assertTrue(new HomePage(getDriver())
+                .clickBtnLoginHeader()
+                .typeLoginForm("", "QWErty123!")
+                .isTextInElementPresent_errorMessageEmailRequired());
+    }
+
+    @Test
+    public void loginNegativeTest_emptyPassword() {
+        Assert.assertTrue(new HomePage(getDriver())
+                .clickBtnLoginHeader()
+                .typeLoginForm("vv@gmail.com", "")
+                .isTextInElementPresent_errorMessagePasswordRequired());
     }
 }

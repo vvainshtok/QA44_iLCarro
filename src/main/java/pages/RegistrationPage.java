@@ -73,9 +73,5 @@ public class RegistrationPage extends BasePage {
         return isTextInElementPresent(textPopUpRegSuccess,"You are logged in success");
     }
 
-    public AccountPage clickBtnRegistrationOk() {
-        if (textRegistered.isDisplayed())
-            btnOk.click();
-        return new AccountPage(driver);
-    }
+
 }
