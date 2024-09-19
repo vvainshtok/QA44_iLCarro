@@ -1,6 +1,6 @@
 package pages;
 
-import org.openqa.selenium.Keys;
+import dto.UserDto;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,11 +23,11 @@ public class LoginPage extends BasePage{
     WebElement btnYalla;
 
     @FindBy(xpath="//h2[@class='message']")
-    WebElement textPopUpLoginSuccess;
+    WebElement textPopUpLogin;
 
-    @FindBy(xpath="//*[@id='email']/../div/div")
+    @FindBy(xpath="//*[@id='email']/..//div[@class='error']/div")
     WebElement errorMessageUnderEmailInput;
-    @FindBy(xpath="//*[@id='password']/../div")
+    @FindBy(xpath="//*[@id='password']/..//div[@class='error']")
     WebElement errorMessageUnderPasswordInput;
 
 
@@ -38,29 +38,34 @@ public class LoginPage extends BasePage{
         return this;
     }
 
+    public LoginPage typeLoginForm(UserDto user) {
+        inputEmail.sendKeys(user.getEmail());
+        inputPassword.sendKeys(user.getPassword());
+        inputEmail.click();
+        return this;
+    }
+
     public LoginPage clickBtnYalla() {
         pause(3);
         btnYalla.click();
         return this;
     }
 
-    public boolean isTextInElementPresent_LoginSuccess() {
-        return isTextInElementPresent(textPopUpLoginSuccess, "Logged in success");
+    public boolean isTextInElementPresent_Login(String text) {
+        return isTextInElementPresent(textPopUpLogin, text);
     }
 
-    public boolean isTextInElementPresent_errorMessageLogin() {
-        return isTextInElementPresent(textPopUpLoginSuccess, "Login or Password incorrect");
+
+    public boolean isTextInElementPresent_ErrorEmail(String text) {
+        return isTextInElementPresent(errorMessageUnderEmailInput, text);
+    }
+    public boolean isTextInElementPresent_ErrorPassword(String text) {
+        return isTextInElementPresent(errorMessageUnderPasswordInput, text);
     }
 
     public boolean isTextInElementPresent_errorMessageNotEmail() {
         return isTextInElementPresent(errorMessageUnderEmailInput, "not look like email");
     }
 
-    public boolean isTextInElementPresent_errorMessageEmailRequired() {
-        return isTextInElementPresent(errorMessageUnderEmailInput, "Email is required");
-    }
 
-    public boolean isTextInElementPresent_errorMessagePasswordRequired() {
-        return isTextInElementPresent(errorMessageUnderPasswordInput, "Password is required");
-    }
 }

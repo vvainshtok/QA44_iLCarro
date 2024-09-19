@@ -1,5 +1,6 @@
 package pages;
 
+import dto.UserDto;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -24,18 +25,16 @@ public class RegistrationPage extends BasePage {
     @FindBy(id = "password")
     WebElement inputPassword;
     @FindBy(xpath = "//label[@for='terms-of-use']")
-            // //label[@for='terms-of-use']
-            // //*[text()=' I agree to the ']
-            // //*[text()=' and ']
-            // //div[@class='checkbox-container']
-            // //input[@type='checkbox']
     WebElement checkbox;
-
     @FindBy(xpath="//button[@type='submit']")
     WebElement btnYalla;
-
     @FindBy(xpath="//h2[@class='message']")
     WebElement textPopUpRegSuccess;
+
+    @FindBy(xpath="//*[@id='email']/..//div[@class='error']/div")
+    WebElement errorMessageUnderEmailInput;
+
+
 
     @FindBy(xpath = "//*[text()='Registered']")
     WebElement textRegistered;
@@ -47,14 +46,17 @@ public class RegistrationPage extends BasePage {
         inputLastName.sendKeys(lastName);
         inputEmail.sendKeys(email);
         inputPassword.sendKeys(password);
-
-    //    inputPassword.sendKeys(Keys.TAB);
-    //    new Actions(driver)
-    //            .keyDown(Keys.SPACE)
-    //            .keyUp(Keys.SPACE)
-    //            .perform();
         return this;
     }
+
+    public RegistrationPage typeRegistrationForm(UserDto user) {
+        inputName.sendKeys(user.getName());
+        inputLastName.sendKeys(user.getLastName());
+        inputEmail.sendKeys(user.getEmail());
+        inputPassword.sendKeys(user.getPassword());
+        return this;
+    }
+
 
     public RegistrationPage clickCheckBox() {
         int width = checkbox.getRect().getWidth();
@@ -72,6 +74,8 @@ public class RegistrationPage extends BasePage {
     public boolean isElementPresentRegSuccess() {
         return isTextInElementPresent(textPopUpRegSuccess,"You are logged in success");
     }
-
+    public boolean isTextInElementPresent_ErrorEmail(String text) {
+        return isTextInElementPresent(errorMessageUnderEmailInput,text);
+    }
 
 }

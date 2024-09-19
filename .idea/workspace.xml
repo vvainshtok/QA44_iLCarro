@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="Il Carro Login and Registration Positive Tests (исправлено после урока)">
+    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="Login Negative Tests added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TermsOfUsePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -57,16 +67,25 @@
     "TestNG.LoginTests.loginNegativeTest_emptyEmail.executor": "Run",
     "TestNG.LoginTests.loginNegativeTest_emptyPassword.executor": "Run",
     "TestNG.LoginTests.loginNegativeTest_invalidEmail.executor": "Run",
+    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt.executor": "Run",
+    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum.executor": "Run",
     "TestNG.LoginTests.loginNegativeTest_wrongEmail.executor": "Run",
     "TestNG.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
     "TestNG.LoginTests.loginPositiveTest.executor": "Run",
+    "TestNG.RegistrationTests.registrationNegativeTest_invalidEmail.executor": "Run",
     "TestNG.RegistrationTests.registrationPositiveTest.executor": "Run",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/My Documents/Tel-Ran/Automation/QA44/QA44_iLCarro/src/main/java/utils"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTests">
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Documents\Tel-Ran\Automation\QA44\QA44_iLCarro\src\main\java\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.RegistrationTests.registrationNegativeTest_invalidEmail">
+    <configuration name="LoginTests.loginNegativeTest_invalidEmailWOAt_Enum" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44_iLCarro" />
       <extension name="coverage">
         <pattern>
@@ -76,24 +95,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.loginNegativeTest_emptyPassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA44_iLCarro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="METHOD_NAME" value="loginNegativeTest_emptyPassword" />
+      <option name="METHOD_NAME" value="loginNegativeTest_invalidEmailWOAt_Enum" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,12 +157,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationTests.registrationNegativeTest_invalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA44_iLCarro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTests" />
+      <option name="METHOD_NAME" value="registrationNegativeTest_invalidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.LoginTests.loginNegativeTest_wrongEmail" />
+        <item itemvalue="TestNG.RegistrationTests.registrationNegativeTest_invalidEmail" />
+        <item itemvalue="TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum" />
         <item itemvalue="TestNG.LoginTests.loginNegativeTest_wrongPassword" />
-        <item itemvalue="TestNG.LoginTests.loginNegativeTest_emptyPassword" />
+        <item itemvalue="TestNG.LoginTests.loginNegativeTest_wrongEmail" />
         <item itemvalue="TestNG.LoginTests.loginPositiveTest" />
       </list>
     </recent_temporary>
@@ -214,13 +234,22 @@
       <option name="project" value="LOCAL" />
       <updated>1726216417524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Login Negative Tests added">
+      <option name="closed" value="true" />
+      <created>1726411447810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726411447810</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Il Carro First Test" />
     <MESSAGE value="Il Carro Login and Registration Positive Tests" />
     <MESSAGE value="Il Carro Login and Registration Positive Tests (исправлено после урока)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Il Carro Login and Registration Positive Tests (исправлено после урока)" />
+    <MESSAGE value="Login Negative Tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Negative Tests added" />
   </component>
 </project>

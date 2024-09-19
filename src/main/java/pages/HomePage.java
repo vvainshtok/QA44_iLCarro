@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-import java.nio.file.WatchEvent;
-
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
@@ -18,17 +16,17 @@ public class HomePage extends BasePage {
     }
 
     @FindBy(xpath="//a[text()=' Log in ']")
-    WebElement btnLoginHeader;
+    WebElement btnLogin;
     @FindBy(xpath="//a[text()=' Sign up ']")
-    WebElement btnSignupHeader;
+    WebElement btnSignup;
 
-    public LoginPage clickBtnLoginHeader() {
-        btnLoginHeader.click();
+    public LoginPage clickBtnLogin() {
+        btnLogin .click();
         return new LoginPage(driver);
     }
 
-    public RegistrationPage clickBtnSignupHeader() {
-        btnSignupHeader.click();
+    public RegistrationPage clickBtnSignup() {
+        btnSignup.click();
         return new RegistrationPage(driver);
     }
 
