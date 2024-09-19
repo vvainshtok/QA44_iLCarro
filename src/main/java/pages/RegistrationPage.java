@@ -77,5 +77,5 @@ public class RegistrationPage extends BasePage {
     public boolean isTextInElementPresent_ErrorEmail(String text) {
         return isTextInElementPresent(errorMessageUnderEmailInput,text);
     }
-
+//
 }
