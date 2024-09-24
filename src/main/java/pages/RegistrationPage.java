@@ -34,8 +34,6 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath="//*[@id='email']/..//div[@class='error']/div")
     WebElement errorMessageUnderEmailInput;
 
-
-
     @FindBy(xpath = "//*[text()='Registered']")
     WebElement textRegistered;
     @FindBy(xpath = "//button[text()='Ok']")

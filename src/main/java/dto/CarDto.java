@@ -12,13 +12,16 @@ import utils.FuelType;
 
 public class CarDto {
 
-    private String manufacturer;
+    private String serialNumber;
+    private String manufacture;
     private String model;
-    private Integer year;
-    private FuelType fuel;
-    private Integer seats;
+    private String year;
+    private String fuel;
+//    private FuelType fuel;
+    private int seats;
     private String carClass;
-    private String carRegistrationNumber;
-    private Integer price;
+    private double pricePerDay;
     private String about;
+    private String city; // location
+
 }
