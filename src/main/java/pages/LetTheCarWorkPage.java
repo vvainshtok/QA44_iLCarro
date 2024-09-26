@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.Select;
+
+
 
 public class LetTheCarWorkPage extends BasePage{
 
@@ -24,9 +27,11 @@ public class LetTheCarWorkPage extends BasePage{
     WebElement inputModel;
     @FindBy(id = "year")
     WebElement inputYear;
-    @FindBy(id = "fuel")
-    WebElement inputFuel;
-    // Select selectFuel = new Select(driver.findElement(By.id("fuel")));
+    // @FindBy(id = "fuel")
+    // WebElement inputFuel;
+
+    Select selectFuel = new Select(driver.findElement(By.id("fuel")));
+
     @FindBy(id = "seats")
     WebElement inputSeats;
     @FindBy(id = "class")
@@ -61,10 +66,10 @@ public class LetTheCarWorkPage extends BasePage{
         pause(2);
         driver.findElement(By.xpath("//div[@class='pac-item']")).click();
 
-/*
         inputManufacture.sendKeys(car.getManufacture());
         inputModel.sendKeys(car.getModel());
-        inputYear.sendKeys(car.getYear().toString());
+        inputYear.sendKeys(car.getYear());
+        //inputFuel.sendKeys(car.getFuel());
         selectFuel.selectByValue(car.getFuel().getText());
         inputSeats.sendKeys(car.getSeats().toString());
         pause(3);
@@ -73,7 +78,7 @@ public class LetTheCarWorkPage extends BasePage{
         inputPrice.sendKeys(car.getPricePerDay().toString());
         inputAbout.sendKeys(car.getAbout());
         pause(3);
-  */
+
         return this;
     }
 

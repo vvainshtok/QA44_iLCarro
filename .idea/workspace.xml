@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="AddCarPositiveTest added">
+    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="AddNewCarPositiveTest -- with lector (beginning)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,29 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AddCarTests.addCarPositiveTest.executor": "Run",
-    "TestNG.AddCarTests.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarPositiveTest.executor": "Run",
-    "TestNG.HomeTests.executor": "Run",
-    "TestNG.LoginTests.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_emptyEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_emptyPassword.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_wrongEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
-    "TestNG.LoginTests.loginPositiveTest.executor": "Run",
-    "TestNG.RegistrationTests.registrationNegativeTest_invalidEmail.executor": "Run",
-    "TestNG.RegistrationTests.registrationPositiveTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/My Documents/Tel-Ran/Automation/QA44/QA44_iLCarro/src/main/java/utils"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AddCarTests.addCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddCarTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomeTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_emptyEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTests.registrationNegativeTest_invalidEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My Documents/Tel-Ran/Automation/QA44/QA44_iLCarro/src/main/java/utils&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\My Documents\Tel-Ran\Automation\QA44\QA44_iLCarro\src\main\java\utils" />
@@ -259,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727084100407</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="AddNewCarPositiveTest -- with lector (beginning)">
+      <option name="closed" value="true" />
+      <created>1727201753100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727201753100</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -269,6 +276,7 @@
     <MESSAGE value="Login Negative Tests added" />
     <MESSAGE value="Login Negative Tests changed, Reg Negative Test added" />
     <MESSAGE value="AddCarPositiveTest added" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddCarPositiveTest added" />
+    <MESSAGE value="AddNewCarPositiveTest -- with lector (beginning)" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddNewCarPositiveTest -- with lector (beginning)" />
   </component>
 </project>

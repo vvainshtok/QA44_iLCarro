@@ -16,11 +16,11 @@ public class CarDto {
     private String manufacture;
     private String model;
     private String year;
-    private String fuel;
-//    private FuelType fuel;
-    private int seats;
+    //private String fuel;
+    private FuelType fuel;
+    private Integer seats;
     private String carClass;
-    private double pricePerDay;
+    private Double pricePerDay;
     private String about;
     private String city; // location
 
