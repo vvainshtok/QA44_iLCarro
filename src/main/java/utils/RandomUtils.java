@@ -50,25 +50,25 @@ public class RandomUtils {
         return res;
     }
 
-    public static FuelType generateFuelType() {
+    public static Fuel generateFuelType() {
         int index = random.nextInt(5);
         System.out.println(index);
-        FuelType res = null;
+        Fuel res = null;
         switch (index) {
             case 0:
-                res = FuelType.DIESEL;
+                res = Fuel.DIESEL;
                 break;
             case 1:
-                res = FuelType.PETROL;
+                res = Fuel.PETROL;
                 break;
             case 2:
-                res = FuelType.HYBRID;
+                res = Fuel.HYBRID;
                 break;
             case 3:
-                res = FuelType.ELECTRIC;
+                res = Fuel.ELECTRIC;
                 break;
             case 4:
-                res = FuelType.GAS;
+                res = Fuel.GAS;
                 break;
         }
         return res;

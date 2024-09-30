@@ -1,0 +1,13 @@
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,,Prius,2019,//option[@value='Diesel'],5,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,,2019,//option[@value='Diesel'],5,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,,//option[@value='Diesel'],5,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,,5,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],-999,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],1,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],21,C-Class,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,,1000-2352,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,C-Class,,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,C-Class,1234567890123456,1000.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,C-Class,1000-2352,-999.0,text,20220205_230058.jpg
+Haifa,Toyota,Prius,2019,//option[@value='Diesel'],5,C-Class,1000-2352,-1.0,text,20220205_230058.jpg

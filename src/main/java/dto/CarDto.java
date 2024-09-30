@@ -1,7 +1,7 @@
 package dto;
 
 import lombok.*;
-import utils.FuelType;
+import utils.Fuel;
 
 @Getter
 @Setter
@@ -16,12 +16,13 @@ public class CarDto {
     private String manufacture;
     private String model;
     private String year;
-    //private String fuel;
-    private FuelType fuel;
-    private Integer seats;
+    private String fuel;
+    //private Fuel fuel;
+    private int seats;
     private String carClass;
-    private Double pricePerDay;
+    private double pricePerDay;
     private String about;
     private String city; // location
+    private String image;
 
 }

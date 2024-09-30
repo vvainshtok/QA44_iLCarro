@@ -3,7 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.HeaderMenuItem;
+
+import java.time.Duration;
 
 public class BasePage {
 
@@ -45,5 +49,31 @@ public class BasePage {
         }
     }
 
+    public void clickWait(WebElement element, int time) {
+        new WebDriverWait(driver, Duration.ofSeconds(time))
+                .until(ExpectedConditions.elementToBeClickable(element))
+                .click();
+
+    }
+
+    public void clickWait(By locator, int time) {
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(time))
+                    .until(ExpectedConditions.elementToBeClickable(locator))
+                    .click();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public boolean isElementClickable(WebElement element, int time) {
+        try {
+            WebElement element1 = new WebDriverWait(driver, Duration.ofSeconds(time))
+                    .until(ExpectedConditions.elementToBeClickable(element));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
 }
