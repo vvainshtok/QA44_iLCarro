@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="AddNewCarPositiveTest modified">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data_provider/DPAddCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/car_empty_or_wrong_fields.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c93e59a5-093c-4bdf-bb97-315209fe4da9" name="Changes" comment="AddNewCarNegativeTests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Fuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,54 +47,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AddCarTests.addCarPositiveTest.executor": "Run",
-    "TestNG.AddCarTests.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_badCity.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_badSeats.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_carExists.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyCarClass.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyFieldDP.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyManufacture.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyModel.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyOrWrongFieldsDP.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyPrice.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptySeats.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptySerialNumber.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_emptyYear.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_lessThan0Price.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_moreThan1000Price.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_moreThan20Seats.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_tooLongSerialNumber.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarNegativeTest_wrongYear.executor": "Run",
-    "TestNG.AddNewCarTests.addNewCarPositiveTest.executor": "Run",
-    "TestNG.AddNewCarTests.executor": "Run",
-    "TestNG.HomeTests.executor": "Run",
-    "TestNG.LoginTests.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_emptyEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_emptyPassword.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_wrongEmail.executor": "Run",
-    "TestNG.LoginTests.loginNegativeTest_wrongPassword.executor": "Run",
-    "TestNG.LoginTests.loginPositiveTest.executor": "Run",
-    "TestNG.RegistrationTests.registrationNegativeTest_invalidEmail.executor": "Run",
-    "TestNG.RegistrationTests.registrationPositiveTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/My Documents/Tel-Ran/Automation/QA44/QA44_iLCarro/src/test/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AddCarTests.addCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddCarTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_badCity.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_badSeats.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_carExists.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyCarClass.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyFieldDP.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyManufacture.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyModel.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyOrWrongFieldsDP.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyPrice.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptySeats.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptySerialNumber.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_emptyYear.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_lessThan0Price.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_moreThan1000Price.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_moreThan20Seats.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_tooLongSerialNumber.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarNegativeTest_wrongYear.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddNewCarTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomeTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_emptyEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_emptyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_invalidEmailWOAt_Enum.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTests.registrationNegativeTest_invalidEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My Documents/Tel-Ran/Automation/QA44/QA44_iLCarro/src/test/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\My Documents\Tel-Ran\Automation\QA44\QA44_iLCarro\src\test\resources" />
       <recent name="D:\My Documents\Tel-Ran\Automation\QA44\QA44_iLCarro\src\main\java\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddNewCarTests.addNewCarNegativeTest_emptyOrWrongFieldsDP">
+  <component name="RunManager" selected="TestNG.LoginTests.loginPositiveTest">
     <configuration name="AddNewCarTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44_iLCarro" />
       <extension name="coverage">
@@ -135,24 +123,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AddNewCarTests" />
       <option name="METHOD_NAME" value="addNewCarNegativeTest_emptyOrWrongFieldsDP" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewCarTests.addNewCarNegativeTest_moreThan1000Price" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA44_iLCarro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AddNewCarTests" />
-      <option name="METHOD_NAME" value="addNewCarNegativeTest_moreThan1000Price" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -196,13 +166,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests.loginPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA44_iLCarro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="loginPositiveTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.loginPositiveTest" />
         <item itemvalue="TestNG.AddNewCarTests.addNewCarNegativeTest_emptyOrWrongFieldsDP" />
         <item itemvalue="TestNG.AddNewCarTests" />
         <item itemvalue="TestNG.AddNewCarTests.addNewCarNegativeTest_wrongYear" />
         <item itemvalue="TestNG.AddNewCarTests.addNewCarNegativeTest_tooLongSerialNumber" />
-        <item itemvalue="TestNG.AddNewCarTests.addNewCarNegativeTest_moreThan1000Price" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +291,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727348489322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AddNewCarNegativeTests added">
+      <option name="closed" value="true" />
+      <created>1727697623863</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727697623863</updated>
+    </task>
+    <task id="LOCAL-00013" summary="AddNewCarNegativeTests added">
+      <option name="closed" value="true" />
+      <created>1727697826481</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727697826481</updated>
+    </task>
+    <task id="LOCAL-00014" summary="AddNewCarNegativeTests added">
+      <option name="closed" value="true" />
+      <created>1727698297411</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727698297411</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -315,6 +327,7 @@
     <MESSAGE value="AddCarPositiveTest added" />
     <MESSAGE value="AddNewCarPositiveTest -- with lector (beginning)" />
     <MESSAGE value="AddNewCarPositiveTest modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddNewCarPositiveTest modified" />
+    <MESSAGE value="AddNewCarNegativeTests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddNewCarNegativeTests added" />
   </component>
 </project>
