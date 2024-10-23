@@ -16,10 +16,14 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 import static pages.BasePage.clickButtonsOnHeader;
+import static utils.PropertiesReader.getProperty;
 
 public class AddNewCarTests extends ApplicationManager {
 
-    UserDto user = new UserDto("Victor", "V","vv@gmail.com","QWErty123!");
+    UserDto user = new UserDto(getProperty("data.properties","name"),
+            getProperty("data.properties","lastName"),
+            getProperty("data.properties","email"),
+            getProperty("data.properties","password"));
     LetTheCarWorkPage letTheCarWorkPage;
 
     @BeforeMethod
@@ -32,12 +36,13 @@ public class AddNewCarTests extends ApplicationManager {
         letTheCarWorkPage = clickButtonsOnHeader(HeaderMenuItem.LET_THE_CAR_WORK);
     }
 
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void addNewCarPositiveTest(Method method) {
        // String carManufacturerAndModel[] = generateManufacturerAndModel();
        CarDto car = CarDto.builder()
                .city("Haifa")
                .manufacture("Toyota")
+       //        .manufacture("") // для проверки retryAnalyzer
                .model("Prius")
                 //.manufacture(carManufacturerAndModel[0])
                 //.model(carManufacturerAndModel[1])
